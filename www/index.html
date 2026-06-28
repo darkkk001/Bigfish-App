@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BigFish Terminal</title>
+  <style>
+    html, body { height: 100%; margin: 0; background: #0a0d14; color: #fff7dd;
+      font-family: -apple-system, Segoe UI, Roboto, sans-serif; }
+    .wrap { height: 100%; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 14px; text-align: center; padding: 24px; }
+    .title { font-size: 20px; font-weight: 600; letter-spacing: .5px; }
+    .tag { font-size: 11px; color: rgba(255,247,221,.45); letter-spacing: .4px; }
+    .msg { font-size: 13px; color: rgba(255,247,221,.6); margin-top: 8px; max-width: 280px; }
+    button { margin-top: 10px; background: rgba(255,213,74,.12); color: #ffd54a;
+      border: 1px solid rgba(255,213,74,.3); padding: 10px 22px; border-radius: 10px;
+      font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">BigFish Terminal</div>
+    <div class="tag">Market Intelligence Terminal</div>
+    <div class="msg">You appear to be offline. Reconnect to load the live terminal.</div>
+    <button onclick="location.href='https://bigfish.live'">Retry</button>
+  </div>
+</body>
+</html>

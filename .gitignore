@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Capacitor / build artifacts
+dist/
+.DS_Store
+*.log
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/captures/
+android/local.properties
+android/.idea/
+*.keystore
+*.jks
+key.properties
+
+# iOS
+ios/App/build/
+ios/App/Pods/
+ios/DerivedData/
+ios/App/output/
+*.ipa
+*.xcuserstate
+
+# IDE
+.idea/
+.vscode/
