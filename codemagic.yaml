@@ -18,6 +18,10 @@ workflows:
         script: npx cap sync android
       - name: Build debug APK
         script: |
+          set -e
+          echo "== installed JDKs =="; /usr/libexec/java_home -V 2>&1 || true
+          export JAVA_HOME="$(/usr/libexec/java_home -v 21)"
+          echo "== using JAVA_HOME=$JAVA_HOME =="; "$JAVA_HOME/bin/java" -version
           cd android
           chmod +x ./gradlew
           ./gradlew assembleDebug --no-daemon
