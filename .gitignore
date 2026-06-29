@@ -28,3 +28,6 @@ ios/App/output/
 # IDE
 .idea/
 .vscode/
+
+# PWA assets (not used by native shell)
+icons/

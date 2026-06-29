@@ -1,0 +1,31 @@
+<svg width="1322" height="360" viewBox="0 0 1322 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE79A"/><stop offset="0.5" stop-color="#F2C14E"/><stop offset="1" stop-color="#C28814"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161c28"/><stop offset="0.5" stop-color="#0a0d14"/><stop offset="1" stop-color="#070a10"/></linearGradient>
+    <clipPath id="bc"><path d="M414 256 C360 214 290 206 225 214 C190 219 155 232 135 250 C135 256 135 262 135 262 C160 278 215 292 285 292 C348 292 390 278 414 256 Z"/></clipPath>
+  </defs>
+  <g transform="translate(60 30) scale(0.586)">
+    <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#tile)"/>
+    <rect x="18" y="18" width="476" height="476" rx="110" fill="none" stroke="#F2C14E" stroke-opacity="0.42" stroke-width="3"/>
+    <g transform="rotate(-8 256 256)">
+      <path d="M414 256 C360 214 290 206 225 214 C190 219 155 232 135 250 C135 256 135 262 135 262 C160 278 215 292 285 292 C348 292 390 278 414 256 Z" fill="url(#g)"/>
+      <path d="M215 210 L238 135 C255 160 272 190 278 208 Z" fill="url(#g)"/>
+      <path d="M280 288 L245 342 C278 313 298 301 308 297 Z" fill="url(#g)"/>
+      <path d="M138 250 L90 208 C112 228 120 244 118 256 C120 270 112 288 98 300 L138 262 Z" fill="url(#g)"/>
+      <g clip-path="url(#bc)">
+        <g fill="#090c13" stroke="#090c13">
+          <line x1="218" y1="240" x2="218" y2="296" stroke-width="3"/><rect x="208" y="250" width="20" height="36" rx="3" stroke="none"/>
+          <line x1="250" y1="232" x2="250" y2="290" stroke-width="3"/><rect x="240" y="242" width="20" height="40" rx="3" stroke="none"/>
+          <line x1="282" y1="220" x2="282" y2="284" stroke-width="3"/><rect x="272" y="230" width="20" height="46" rx="3" stroke="none"/>
+          <line x1="314" y1="206" x2="314" y2="278" stroke-width="3"/><rect x="304" y="216" width="20" height="54" rx="3" stroke="none"/>
+        </g>
+        <polyline points="218,248 250,240 282,228 314,214" fill="none" stroke="#FFE79A" stroke-opacity="0.9" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+      <line x1="356" y1="238" x2="356" y2="262" stroke="#090c13" stroke-opacity="0.6" stroke-width="3"/>
+      <line x1="366" y1="238" x2="366" y2="262" stroke="#090c13" stroke-opacity="0.6" stroke-width="3"/>
+      <circle cx="386" cy="248" r="10" fill="#0a0d14"/><circle cx="389" cy="245" r="3.5" fill="#FFE9AA"/>
+    </g>
+  </g>
+  <text x="416" y="200" font-family="'JetBrains Mono','DejaVu Sans Mono',ui-monospace,monospace" font-weight="700" font-size="150" letter-spacing="10" fill="url(#g)">BIGFISH</text>
+  <text x="420" y="246" font-family="'JetBrains Mono','DejaVu Sans Mono',ui-monospace,monospace" font-weight="700" font-size="34" letter-spacing="11" fill="#b09a55">MARKET INTELLIGENCE TERMINAL</text>
+</svg>
