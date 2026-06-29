@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199195152487",
+    "project_id": "bigfish-terminal",
+    "storage_bucket": "bigfish-terminal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199195152487:android:358ffa0ce2cfc3cfec84c2",
+        "android_client_info": {
+          "package_name": "live.bigfish.terminal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOQ3tHAwS20ElIdeDcxRATMe1YHfDunQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

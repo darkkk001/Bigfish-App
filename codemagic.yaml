@@ -1,0 +1,24 @@
+# Codemagic CI/CD — BigFish Terminal (Capacitor wrap of bigfish.live)
+# Android DEBUG build for device testing (verify push notifications end-to-end by sideloading the APK).
+# Builds are MANUAL (no auto-trigger) to conserve free-tier minutes — click "Start new build" in Codemagic.
+# An iOS workflow + a signed Android release workflow will be added once an Apple Developer account,
+# APNs key, and an Android upload keystore are set up.
+workflows:
+  android-debug:
+    name: BigFish Android (debug APK)
+    max_build_duration: 60
+    instance_type: mac_mini_m2          # free-tier instance; Android SDK preinstalled
+    environment:
+      node: 20
+    scripts:
+      - name: Install JS dependencies
+        script: npm ci
+      - name: Capacitor sync (Android)
+        script: npx cap sync android
+      - name: Build debug APK
+        script: |
+          cd android
+          chmod +x ./gradlew
+          ./gradlew assembleDebug --no-daemon
+    artifacts:
+      - android/app/build/outputs/**/*.apk   # downloadable from the Codemagic build page
