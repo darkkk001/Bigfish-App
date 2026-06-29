@@ -10,6 +10,7 @@ workflows:
     instance_type: mac_mini_m2          # free-tier instance; Android SDK preinstalled
     environment:
       node: 22          # Capacitor 8 CLI requires Node >= 22
+      java: 21          # Capacitor 8 Android targets Java 21 (else: "invalid source release: 21")
     scripts:
       - name: Install JS dependencies
         script: npm ci
