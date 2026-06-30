@@ -7,9 +7,10 @@ const config: CapacitorConfig = {
   // Load the live SSR portal directly (full feature parity). The native shell adds
   // push notifications, splash, status-bar styling, etc. on top.
   server: {
-    // Use the CANONICAL host (www). bigfish.live 308-redirects to www.bigfish.live; loading the
-    // non-www URL made the WebView treat the redirect as external and open the system browser.
-    url: 'https://www.bigfish.live',
+    // Open straight into the Terminal (what "Launch Terminal" leads to) — not the marketing homepage.
+    // /portal is auth-guarded: logged in -> terminal immediately; logged out -> /login?next=/portal.
+    // CANONICAL host (www) — bigfish.live 308-redirects to www, which would bounce the WebView to the browser.
+    url: 'https://www.bigfish.live/portal',
     cleartext: false,
     androidScheme: 'https',
     // Keep BOTH hosts inside the in-app WebView (don't bounce to the system browser).
